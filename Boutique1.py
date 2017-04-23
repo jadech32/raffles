@@ -11,13 +11,13 @@ headers = {'User-Agent':
 def main(limit):
     for i in range(1, limit):
         session = requests.Session()
-        email = 'jade.jch+{}@gmail.com'.format(getrandbits(40)) # CHANGE YOUR_EMAIL to your email prefix. don't change the +{} after.
+        email = 'your_email+{}@gmail.com'.format(getrandbits(40)) # CHANGE YOUR_EMAIL to your email prefix. don't change the +{} after.
         payload = {
-            'competition_name': 'Jakrarat', # put your first name
-            'surname': 'Chunnananda', # put your last name
+            'competition_name': '', # put your first name
+            'surname': '', # put your last name
             'competition_email': email, # DO NOT CHANGE
-            'mobile': '7789854625', # put your number without spaces, like 1234567890
-            'shoe_size': '8', # put ONE shoe size, like 10, 9.5, etc.
+            'mobile': '', # put your number without spaces, like 1234567890
+            'shoe_size': '', # put ONE shoe size, like 10, 9.5, etc.
             'tc': 'terms'
         }
         resp = session.post(url, data=payload, headers=headers)

@@ -23,7 +23,7 @@ headers = {
 def main(limit):
 
     for i in range(1,limit):
-        email = 'jade.jch+{}@gmail.com'.format(getrandbits(40)) # CHANGE YOUR_EMAIL to your email prefix. don't change the +{} after.
+        email = 'your_email+{}@gmail.com'.format(getrandbits(40)) # CHANGE YOUR_EMAIL to your email prefix. don't change the +{} after.
 
         form = {
             'fid': 'az29kh7x0eyaepdiyjrpwnoaucqqy',
@@ -32,10 +32,10 @@ def main(limit):
             'subid': '',
             'td': '',
             'formtype': 'addcontact',
-            '90298[29288859]': 'Jakrarat',  # FIRST NAME
-            '90299[29288860]': 'Chunnananda',  # LAST NAME
+            '90298[29288859]': '',  # FIRST NAME
+            '90299[29288860]': '',  # LAST NAME
             '90300': email,  # EMAIL JIG
-            '90301[29288866]': '8',  # SHOE SIZE
+            '90301[29288866]': '',  # SHOE SIZE
             '90302[29289136]': '',  # INSTAGRAM / OPTIONAL
             '90303[29289137]': 'Agree to Terms',  # DON'T CHANGE THIS
             '90307[899049]': 'true'
